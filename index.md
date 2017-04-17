@@ -8,25 +8,44 @@ media: Twitter, Facebook public pages, web site, the official blog or independen
 related to company. Explain what language and tools you used and why. Consider using
 each of the following access or mining techniques as you deem appropriate - explain why
 you selected what you did:
-Search for tweets
-Tweet trending
-Next search results
-Tweet users and entities
-Lexical Diversity
-Retweets
-Likes and Frequency analysis
-Screen Scraping
-Facebook public page commentary
-Sentiment analysis
-TDM
-EOS and Freq Dist
-POS, Chunking, Extraction
-Summarization techniques
-N-Grams
-TF-IDF
-Cosine Similarity
-Associations
-Geocoding
+
+*Search for tweets
+
+*Tweet trending
+
+*Next search results
+
+*Tweet users and entities
+
+*Lexical Diversity
+
+*Retweets
+
+*Likes and Frequency analysis
+
+*Screen Scraping
+
+*Facebook public page commentary
+
+*Sentiment analysis
+
+*TDM
+
+*EOS and Freq Dist
+
+*POS, Chunking, Extraction
+
+*Summarization techniques
+
+*N-Grams
+
+*TF-IDF
+
+*Cosine Similarity
+
+*Associations
+
+*Geocoding
 
 
 
