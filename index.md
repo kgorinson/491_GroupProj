@@ -1,5 +1,40 @@
 ## Group Project for 491 UMBC
 
+
+## Assignment
+# Due May 8th
+Pick a high tech company you are interested in investigating. Analyze the company’s social
+media: Twitter, Facebook public pages, web site, the official blog or independent blogs
+related to company. Explain what language and tools you used and why. Consider using
+each of the following access or mining techniques as you deem appropriate - explain why
+you selected what you did:
+Search for tweets
+Tweet trending
+Next search results
+Tweet users and entities
+Lexical Diversity
+Retweets
+Likes and Frequency analysis
+Screen Scraping
+Facebook public page commentary
+Sentiment analysis
+TDM
+EOS and Freq Dist
+POS, Chunking, Extraction
+Summarization techniques
+N-Grams
+TF-IDF
+Cosine Similarity
+Associations
+Geocoding
+
+
+
+
+
+
+
+
 You can use the [editor on GitHub](https://github.com/kgor93/491_GroupProj/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
