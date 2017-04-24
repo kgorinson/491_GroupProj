@@ -13,6 +13,7 @@ you selected what you did:
 ### Reference:
 
 [Project 1](https://github.com/kgor93/491_GroupProj/blob/master/proj1.py)
+[In-class handouts Dropbox](https://www.dropbox.com/sh/b14v736kre5sros/AAALDsvAi_9zpPmqC9tq0i7ya?dl=0)
 
 ### Setup commands
 - sagi prettytable
@@ -153,24 +154,29 @@ forloop(pepsi,"pepsi")
 
 We've done a lot of this already in project 1. The bolded parts are the parts we haven't done.
 
-- *Search for tweets
-- *Tweet trending
-- *Next search results
-- *Tweet users and entities
-- *Lexical Diversity
-- *Retweets
-- *Likes and Frequency analysis
-**- Screen Scraping**
-**- Facebook public page commentary**
-- *Sentiment analysis
-**- TDM
+- Search for tweets
+- Tweet trending
+- Next search results
+- Tweet users and entities
+- Lexical Diversity
+- Retweets
+- Likes and Frequency analysis
+**- Screen Scraping --Kyle
+- Facebook public page commentary  --Kyle**
+- Sentiment analysis
+**- TDM???? What's this?
 - EOS and Freq Dist
 - POS, Chunking, Extraction
-- Summarization techniques**
-**- N-Grams
+- Summarization techniques
+- N-Grams -Joanna
 - TF-IDF
 - Cosine Similarity
 - Associations
-- Geocoding**
+- Geocoding** --Joanna
 
 All of these have easy to use API packages. This shouldn't be too difficult at all.
+
+##TODO:
+	We should probably split this up. We can use Project1 as a base code to start with. For next time, let's each try and implement a specific part. Thankfully, these are independent of each other.
+    
+   Also, let's get a centralized location to reference the handouts he has passed out in class. Those basically tell us how to do everything. I've uploaded a bunch of mine. If you guys have any, take a picture and upload it, I've given you all write access. https://www.dropbox.com/sh/b14v736kre5sros/AAALDsvAi_9zpPmqC9tq0i7ya?dl=0
