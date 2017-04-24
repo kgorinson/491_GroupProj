@@ -13,6 +13,7 @@ you selected what you did:
 ### Reference:
 
 [Project 1](https://github.com/kgor93/491_GroupProj/blob/master/proj1.py)
+
 [In-class handouts Dropbox](https://www.dropbox.com/sh/b14v736kre5sros/AAALDsvAi_9zpPmqC9tq0i7ya?dl=0)
 
 ### Setup commands
