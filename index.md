@@ -204,15 +204,19 @@ We've done a lot of this already in project 1. The bolded parts are the parts we
 **- Screen Scraping --Kyle
 - Facebook public page commentary  --Kyle**
 - Sentiment analysis --Kyle
-**- TDM 
-- EOS and Freq Dist --Human #4
-- POS, Chunking, Extraction --Human #4
-- Summarization techniques --Human #3
-- N-Grams -Joanna
-- TF-IDF --Human #3
-- Cosine Similarity
+
+**- TDM  --Joanna
 - Associations --Joanna
 - Geocoding** --Joanna
+
+- EOS and Freq Dist --Person #4
+- POS, Chunking, Extraction --Person #4
+- Summarization techniques --Person #4
+
+- N-Grams -Person #3
+- TF-IDF --Person #3
+- Cosine Similarity Person #3
+
 
 All of these have easy to use API packages. This shouldn't be too difficult at all.
 
