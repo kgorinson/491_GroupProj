@@ -210,10 +210,11 @@ We've done a lot of this already in project 1. The bolded parts are the parts we
 - Geocoding** --Joanna
 
 - EOS and Freq Dist --Person #4
-- POS, Chunking, Extraction --Person #4
+- Ngrams  --Person #4
 - Summarization techniques --Person #4
 
-- N-Grams -Person #3
+
+- POS, Chunking, Extraction -Person #3
 - TF-IDF --Person #3
 - Cosine Similarity Person #3
 
