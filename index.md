@@ -10,104 +10,167 @@ each of the following access or mining techniques as you deem appropriate - expl
 you selected what you did:
 
 
-Setup commands (for reference)
-sagi prettytable
-pip install prettytable
-pip install twitter json nltk cPickle getopt sys textblob
-pip install tweepy==3.3.0
-pip install --upgrade pip
-pip install requests
-pip install pyquery
-pip install fake_useragent
-pip install faker
-pip install requests
-pip install pyquery
-pip install tweepy==3.3.0
-python -m pip install twitter facebook-sdk
-pip install basc-py4chan
-python -m pip install twitter facebook-sdk vaderSentiment==0.5 html5lib BeautifulSoup bumpy nltk
-python 491_proj1.py 
-pip install TextBlob
+### Reference:
 
+[Project 1](https://github.com/kgor93/491_GroupProj/blob/master/proj1.py)
 
-*Search for tweets
+### Setup commands
+- sagi prettytable
+- pip install prettytable
+- pip install twitter json nltk cPickle getopt sys textblob
+- pip install tweepy==3.3.0
+- pip install --upgrade pip
+- pip install requests
+- pip install pyquery
+- pip install fake_useragent
+- pip install faker
+- pip install requests
+- pip install pyquery
+- pip install tweepy==3.3.0
+- python -m pip install twitter facebook-sdk
+- pip install basc-py4chan
+- python -m pip install twitter facebook-sdk vaderSentiment==0.5 html5lib BeautifulSoup bumpy nltk
+- python 491_proj1.py 
+- pip install TextBlob
 
+---------------------------------
 
-*Tweet trending
-
-*Next search results
-
-*Tweet users and entities
-
-*Lexical Diversity
-
-*Retweets
-
-*Likes and Frequency analysis
-
-*Screen Scraping
-
-*Facebook public page commentary
-
-*Sentiment analysis
-
-*TDM
-
-*EOS and Freq Dist
-
-*POS, Chunking, Extraction
-
-*Summarization techniques
-
-*N-Grams
-
-*TF-IDF
-
-*Cosine Similarity
-
-*Associations
-
-*Geocoding
+- *Search for tweets
+- *Tweet trending
+- *Next search results
+- *Tweet users and entities
+- *Lexical Diversity
+- *Retweets
+- *Likes and Frequency analysis
+- *Screen Scraping
+- *Facebook public page commentary
+- *Sentiment analysis
+- *TDM
+- *EOS and Freq Dist
+- *POS, Chunking, Extraction
+- *Summarization techniques
+- *N-Grams
+- *TF-IDF
+- *Cosine Similarity
+- *Associations
+- *Geocoding
 
 
 
+```
+import twitter
+import json
+import nltk
+import cPickle
+import getopt
+import sys
+import json
+from collections import Counter
+from prettytable import PrettyTable
+from textblob import TextBlob
+
+
+def getuser(name,num):
+    return api.user_timeline(screen_name = name,count=num)
+
+def removeUnicode(text):
+	asciiText=""
+	for char in text:
+		if(ord(char)<128):
+			asciiText=asciiText + char
+	return asciiText
+
+def get_tweet_sentiment(tweet):
+    analysis = TextBlob(removeUnicode(tweet))
+    if analysis.sentiment.polarity > 0:
+        return 'positive'
+    elif analysis.sentiment.polarity == 0:
+        return 'neutral'
+    else:
+        return 'negative'
+
+
+def forloop(item,name):
+    sodawords = ""
+    pnum = 0
+    pneg = 0
+    pneu = 0
+    words = []
+    for status in item:
+        print ""
+        currenttweet = removeUnicode(status["text"])
+        print currenttweet
+        parsed_tweet = {}
+        # saving text of tweet
+        parsed_tweet['text'] = currenttweet
+        parsed_tweet['sentiment'] = get_tweet_sentiment(currenttweet)
+        print "Favorite count:",status["favorite_count"]
+        print "Retweet count:",status["retweet_count"]
+        print "The sentiment is:",parsed_tweet['sentiment']
+        print ""
+        #sodawords += str(tweet.text)
+        sodawords += parsed_tweet['text'].encode('utf-8').strip()
+        words += [ w for w in currenttweet.split() ]
+        if parsed_tweet['sentiment'] == "positive":
+            pnum += 1
+        elif parsed_tweet['sentiment'] == "negative":
+            pneg += 1
+        elif parsed_tweet['sentiment'] ==  "neutral":
+            pneu += 1
+    print "Positive in",name,pnum
+    print "Negative in",name,pneg
+    print "Neutral in",name,pneu
+    lexical_diversity = 1.0 * len(set(words)) / len(words)
+    print "Lexical Diversity of all tweets:",lexical_diversity
+    print "----------------------"
 
 
 
 
+CONSUMER_KEY = "Q55QaphWqwHyVW4AblGHfZ1Gv"
+CONSUMER_SECRET = "KjXBieS2wNbx22yo0vepgWfRsZVfImq8zzxLoifJIMA86Pqhm3"
+OAUTH_TOKEN = "1915750028-Dv4A8wXfJeCoRqKKMVPD6FwHpjTjXudO4nI5YXM"
+OAUTH_TOKEN_SECRET = "zQKflAtjkjYdOymo04csDAquHw5lpl3XpvD3ePPv5qoR0"
 
-You can use the [editor on GitHub](https://github.com/kgor93/491_GroupProj/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+auth2 = twitter.oauth.OAuth(OAUTH_TOKEN,OAUTH_TOKEN_SECRET,CONSUMER_KEY,CONSUMER_SECRET)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+tw = twitter.Twitter(auth=auth2)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+coke = tw.statuses.user_timeline(screen_name = "cocacola",count=25)#getuser("cocacola",25)
+pepsi = tw.statuses.user_timeline(screen_name = "pepsi",count=25)
 
-```markdown
-Syntax highlighted code block
+forloop(coke,"coke")
+forloop(pepsi,"pepsi")
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kgor93/491_GroupProj/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+We've done a lot of this already in project 1. The bolded parts are the parts we haven't done.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- *Search for tweets
+- *Tweet trending
+- *Next search results
+- *Tweet users and entities
+- *Lexical Diversity
+- *Retweets
+- *Likes and Frequency analysis
+**- Screen Scraping**
+**- Facebook public page commentary**
+- *Sentiment analysis
+**- TDM
+- EOS and Freq Dist
+- POS, Chunking, Extraction
+- Summarization techniques**
+**- N-Grams
+- TF-IDF
+- Cosine Similarity
+- Associations
+- Geocoding**
+
+All of these have easy to use API packages. This shouldn't be too difficult at all.
