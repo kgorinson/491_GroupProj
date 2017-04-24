@@ -1,21 +1,5 @@
 ## Group Project for 491 UMBC
 
-```
-## <a name='TOC'>Table of Contents</a>
-
-1. [Creating Table of Contents](#tocs)
-1. [Headers](#headers)
-
-
-
-## <a name="headers">Headers</a>
-
-body
-
-**[[⬆]](#TOC)**
-```
-## Headers
-
 ## Assignment
 # Due May 8th
 Pick a high tech company you are interested in investigating. Analyze the company’s social
@@ -189,37 +173,6 @@ forloop(pepsi,"pepsi")
 
 ```
 
-
-
-
-We've done a lot of this already in project 1. The bolded parts are the parts we haven't done.
-
-- Search for tweets
-- Tweet trending
-- Next search results
-- Tweet users and entities
-- Lexical Diversity
-- Retweets
-- Likes and Frequency analysis
-**- Screen Scraping --Kyle
-- Facebook public page commentary  --Kyle**
-- Sentiment analysis --Kyle
-
-**- TDM  --Joanna
-- Associations --Joanna
-- Geocoding** --Joanna
-
-- EOS and Freq Dist --Person #4
-- Ngrams  --Person #4
-- Summarization techniques --Person #4
-
-
-- POS, Chunking, Extraction -Person #3
-- TF-IDF --Person #3
-- Cosine Similarity Person #3
-
-
-All of these have easy to use API packages. This shouldn't be too difficult at all.
 
 ## TODO:
 
