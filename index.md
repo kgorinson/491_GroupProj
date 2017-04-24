@@ -34,7 +34,6 @@ Your Python program performs the following functions:
 
 [Project 1](https://github.com/kgor93/491_GroupProj/blob/master/proj1.py)
 
-
 [In-class handouts Dropbox](https://www.dropbox.com/sh/b14v736kre5sros/AAALDsvAi_9zpPmqC9tq0i7ya?dl=0)
 
 [Direct Download Link](https://www.dropbox.com/sh/b14v736kre5sros/AAALDsvAi_9zpPmqC9tq0i7ya?raw=1)
