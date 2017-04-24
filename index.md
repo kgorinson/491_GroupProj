@@ -203,15 +203,15 @@ We've done a lot of this already in project 1. The bolded parts are the parts we
 - Likes and Frequency analysis
 **- Screen Scraping --Kyle
 - Facebook public page commentary  --Kyle**
-- Sentiment analysis
-**- TDM???? What's this?
-- EOS and Freq Dist
-- POS, Chunking, Extraction
-- Summarization techniques
+- Sentiment analysis --Kyle
+**- TDM 
+- EOS and Freq Dist --Human #4
+- POS, Chunking, Extraction --Human #4
+- Summarization techniques --Human #3
 - N-Grams -Joanna
-- TF-IDF
+- TF-IDF --Human #3
 - Cosine Similarity
-- Associations
+- Associations --Joanna
 - Geocoding** --Joanna
 
 All of these have easy to use API packages. This shouldn't be too difficult at all.
