@@ -9,7 +9,29 @@ related to company. Explain what language and tools you used and why. Consider u
 each of the following access or mining techniques as you deem appropriate - explain why
 you selected what you did:
 
+
+Setup commands (for reference)
+sagi prettytable
+pip install prettytable
+pip install twitter json nltk cPickle getopt sys textblob
+pip install tweepy==3.3.0
+pip install --upgrade pip
+pip install requests
+pip install pyquery
+pip install fake_useragent
+pip install faker
+pip install requests
+pip install pyquery
+pip install tweepy==3.3.0
+python -m pip install twitter facebook-sdk
+pip install basc-py4chan
+python -m pip install twitter facebook-sdk vaderSentiment==0.5 html5lib BeautifulSoup bumpy nltk
+python 491_proj1.py 
+pip install TextBlob
+
+
 *Search for tweets
+
 
 *Tweet trending
 
