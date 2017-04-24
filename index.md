@@ -26,25 +26,25 @@ you selected what you did:
 
 # Rubric:
 Your Python program performs the following functions:
-1. Connects to Twitter and retrieves 25 Tweets from the company hashtag or a hashtag about the company and then the next 25. Display well formatted report of the Tweets 30 points
+1. Connects to Twitter and retrieves 25 Tweets from the company hashtag or a hashtag about the company and then the next 25. Display well formatted report of the Tweets 30 points --Joanna
 
-2. Connects to company Facebook page and retrieves 10 posts Display well formatted report of the Posts. 20 points
+2. Connects to company Facebook page and retrieves 10 posts Display well formatted report of the Posts. 20 points --Kyle
 
-3. Connects to a company Web site and retrieves a web page. Display 3 sentence summary of web page 30 points
+3. Connects to a company Web site and retrieves a web page. Display 3 sentence summary of web page 30 points --Cory
 
 4. Apply some of the following methods, 5 points for each method (explain why you added each - i.e. what does each tell you about the data):
 
-- Add well formatted section on Tweet users to Tweet report
-- Calculate and display Lexical Diversity in Tweet report
-- Display Retweet count in Tweet report
-- Display Likes in Facebook report
-- Display Bigrams for web page
-- Calculate and display Lexical Diversity in Facebook report
-- Calculate and display Sentiment analysis in Tweet report
-- Calculate and display Sentiment analysis in Facebook report
-- Perform and display a part of speech analysis on web page
+**- Add well formatted section on Tweet users to Tweet report --Joanna
+- Calculate and display Lexical Diversity in Tweet report --Joanna
+- Display Retweet count in Tweet report --Joanna
+- Display Likes in Facebook report --Joanna
+**- Display Bigrams for web page**
+- Calculate and display Lexical Diversity in Facebook report --Joanna
+- Calculate and display Sentiment analysis in Tweet report --Joanna
+- Calculate and display Sentiment analysis in Facebook report --Joanna
+**- Perform and display a part of speech analysis on web page
 - Extract and display entities from web page
-- Display a Geocoded distribution of Tweets that have geolocation enabled
+- Display a Geocoded distribution of Tweets that have geolocation enabled**
 
 ### Reference:
 
