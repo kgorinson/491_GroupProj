@@ -23,9 +23,9 @@ Your Python program performs the following functions:
 - Display Retweet count in Tweet report --Joanna
 - Display Likes in Facebook report --Joanna
 **- Display Bigrams for web page**
-- Calculate and display Lexical Diversity in Facebook report --Joanna
+- Calculate and display Lexical Diversity in Facebook report --Kyle
 - Calculate and display Sentiment analysis in Tweet report --Joanna
-- Calculate and display Sentiment analysis in Facebook report --Joanna
+- Calculate and display Sentiment analysis in Facebook report --Kyle
 **- Perform and display a part of speech analysis on web page
 - Extract and display entities from web page
 - Display a Geocoded distribution of Tweets that have geolocation enabled**
