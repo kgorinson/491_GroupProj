@@ -178,7 +178,7 @@ We've done a lot of this already in project 1. The bolded parts are the parts we
 
 All of these have easy to use API packages. This shouldn't be too difficult at all.
 
-##TODO:
+## TODO:
 	We should probably split this up. We can use Project1 as a base code to start with. For next time, let's each try and implement a specific part. Thankfully, these are independent of each other.
     
    Also, let's get a centralized location to reference the handouts he has passed out in class. Those basically tell us how to do everything. I've uploaded a bunch of mine. If you guys have any, take a picture and upload it, I've given you all write access.
