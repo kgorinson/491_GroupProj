@@ -1,2 +1,2 @@
 theme: jekyll-theme-hacker
-gem 'jekyll-admin', group: :jekyll_plugins
+plugins: [jekyll-coffeescript, jekyll-watch, jekyll-assets, jekyll-admin]
