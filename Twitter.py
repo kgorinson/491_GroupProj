@@ -64,11 +64,9 @@ def getTweets(target, count, tw):
 
 def removeUnicode(text):
 	asciiText = ""
-	
 	for char in text:
 		if (ord(char) < 128):
 			asciiText = asciiText + char
-			
 	return asciiText
 	
 def getFreqCount(words, pt):
@@ -86,5 +84,3 @@ def getSentimentAnalysis(gmrText):
 def getLexicalDiversity(words):
 	lexicalDiversity = 1.0*len(set(words))/len(words)
 	return lexicalDiversity
-
-getTwitterData()
