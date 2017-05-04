@@ -34,15 +34,21 @@ def getTweets(target, count, tw):
 	texts = []
 	likes = []
 	retweets = []
-
-	# Get tweets, likes, and retweet count
+	location = []
+	
+	# Get tweets, likes, location, and retweet count
 	for status in tweets["statuses"]:
 		texts.append(status["text"])
 		likes.append(status["favorite_count"])
 		retweets.append(status["retweet_count"])
-	
+		
+		if status["user"]["location"]:
+			location.append(status["user"]["location"])
+		else:
+			location.append("N/A")
+		
 	# Create pretty table
-	user_stats = PrettyTable(field_names=['#', 'Tweets', 'Likes', 'Retweets', 'Lexical Diversity', 'Sentiment Analysis'])
+	user_stats = PrettyTable(field_names=['#', 'Tweets', 'Likes', 'RT','GEOLOC', 'LD', 'SA'])
 
 	# Grab data analysis
 	for i in range(len(texts)):
@@ -54,13 +60,12 @@ def getTweets(target, count, tw):
 		for w in removeUnicode(texts[i]).split():
 			words.append(w)		
 
-		# Get likes, retweets, lexical diversity, sentiment analysis
-		user_stats.add_row([i + 1, message, likes[i], retweets[i], getLexicalDiversity(words), getSentimentAnalysis(tweets["statuses"][i])])
+		# Get likes, retweets, location, lexical diversity, sentiment analysis
+		user_stats.add_row([i + 1, message, likes[i], retweets[i], location[i], getLexicalDiversity(words), getSentimentAnalysis(tweets["statuses"][i])])
 	
 	# Print pretty table
 	user_stats.align = 'l'
 	print user_stats
-	print "*****************************************************************\n"
 
 def removeUnicode(text):
 	asciiText = ""
