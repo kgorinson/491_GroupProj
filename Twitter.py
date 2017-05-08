@@ -14,10 +14,10 @@ from prettytable import PrettyTable
 from vaderSentiment.vaderSentiment import sentiment as vaderSentiment
 
 def getTwitterData():
-	CONSUMER_KEY = '7N6Nts7SgHq7l2qIut59l07Ys'
-	CONSUMER_SECRET = 'DG0ujHG8hwntr3cKDiZxEYtp3QbppYdthnFSQ94WI1zXNREQ9X'
-	OAUTH_TOKEN = '831993168887431168-EBKHMIweuX5VGrENc31hbJMkrOW7Jb5'
-	OAUTH_TOKEN_SECRET = 'bKmGISBTMbl1AL8N6X2Rk7Bq0d6IKlD1xr7858gel2Oon'
+	CONSUMER_KEY = raw_input("Enter CONSUMER_KEY: ")
+	CONSUMER_SECRET = raw_input("Enter CONSUMER_SECRET: ")
+	OAUTH_TOKEN = raw_input("Enter OAUTH_TOKEN: ")
+	OAUTH_TOKEN_SECRET = raw_input("Enter OAUTH_TOKEN_SECRET: ")
 	
 	# CONNECT TO TWITTER
 	print "\nConnecting to Twitter...\n"
@@ -99,4 +99,3 @@ def getLexicalDiversity(words):
 	lexicalDiversity = 1.0*len(set(words))/len(words)
 	return lexicalDiversity
 	
-getTwitterData()
