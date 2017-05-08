@@ -1,5 +1,6 @@
 """
-Kyle's part
+491 Group Project
+Spring 2017
 
 """
 import facebook
